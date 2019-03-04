@@ -31,7 +31,7 @@ public class LoginPage {
 		uname.sendKeys(unameApp);
 		submit.click();
 		pwd.sendKeys(pwdApp);
-		submit.click();
+		//submit.click();
 		
 	}
 }

@@ -2,6 +2,8 @@ package com.Cyrano.pages;
 
 
 import org.openqa.selenium.WebDriver;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 
@@ -24,5 +26,11 @@ public class BaseClass {
 	public void setup() {
 		data = new DataProvider();
 		driver = BrowserFactory.startApp(driver, data.getBrowser(), data.getUrl());
+	}
+	@AfterMethod
+	public void screenShot(ITestResult result) {
+		if(result.getStatus()==ITestResult.FAILURE) {
+			
+		}
 	}
 }
