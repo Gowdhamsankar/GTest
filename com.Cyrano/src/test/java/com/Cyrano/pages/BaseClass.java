@@ -26,7 +26,4 @@ public class BaseClass {
 		data = new DataProvider();
 		driver = BrowserFactory.startApp(driver, data.getBrowser(), data.getUrl());
 	}
-	
-
-	
 }
