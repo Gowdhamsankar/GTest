@@ -20,7 +20,6 @@ public class BaseClass {
 	public void setExcel() {
 		excel = new ExcelData(); 
 	}
-	
 	@BeforeMethod
 	public void setup() {
 		data = new DataProvider();
