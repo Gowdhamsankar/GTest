@@ -18,8 +18,7 @@ public class BaseClass {
 	
 	@BeforeSuite
 	public void setExcel() {
-		excel = new ExcelData();
-		
+		excel = new ExcelData(); 
 	}
 	
 	@BeforeMethod
